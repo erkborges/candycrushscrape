@@ -39,12 +39,16 @@ chave=input('Paste your candycrush session id: ')
 driver.find_element(By.XPATH,'//*[@id="sendme"]/h6[1]/input').send_keys(chave)
 driver2.find_element(By.XPATH,'//*[@id="sendme"]/h6[1]/input').send_keys(chave)
 driver3.find_element(By.XPATH,'//*[@id="sendme"]/h6[1]/input').send_keys(chave)
-# Bomba festa
+
+
+
+# ENTER THE NUMBER OF CHOOSEN BOOSTER HERE, IN '[]'
 driver.find_element(By.XPATH,boosters[8]).click()
-# UFO
 driver2.find_element(By.XPATH,boosters[8]).click()
-# Booser sorte
 driver3.find_element(By.XPATH,boosters[2]).click()
+####
+
+
 while True:
     time.sleep(3)
     try:
@@ -62,16 +66,16 @@ driver2.close()
 driver3.close()
 
 
-## Lista de XPATH para Boosters
-# (0) Martelo: //*[@id="sendme"]/h6[2]/select/option[2]
-# (1) Peixes: //*[@id="sendme"]/h6[2]/select/option[3]
+## XPATH Boosters list
+# (0) Hammer: //*[@id="sendme"]/h6[2]/select/option[2]
+# (1) Fish: //*[@id="sendme"]/h6[2]/select/option[3]
 # (2) UFO: //*[@id="sendme"]/h6[2]/select/option[4]
-# (3) Mãozinha: //*[@id="sendme"]/h6[2]/select/option[5]
-# (4) Bomba colorida: //*[@id="sendme"]/h6[2]/select/option[6]
-# (5) Roda de cor (?): //*[@id="sendme"]/h6[2]/select/option[7]
-# (6) Listrada e wrapped (?): //*[@id="sendme"]/h6[2]/select/option[8]
-# (7) Pincel: //*[@id="sendme"]/h6[2]/select/option[9]
-# (8) Piñata bomba: //*[@id="sendme"]/h6[2]/select/option[10]
-# (9) Coringas: //*[@id="sendme"]/h6[2]/select/option[11]
+# (3) Hand: //*[@id="sendme"]/h6[2]/select/option[5]
+# (4) Coloured bomb: //*[@id="sendme"]/h6[2]/select/option[6]
+# (5) Color wheel: //*[@id="sendme"]/h6[2]/select/option[7]
+# (6) Listred and wrapped: //*[@id="sendme"]/h6[2]/select/option[8]
+# (7) Brush: //*[@id="sendme"]/h6[2]/select/option[9]
+# (8) Party bomb: //*[@id="sendme"]/h6[2]/select/option[10]
+# (9) Lucky: //*[@id="sendme"]/h6[2]/select/option[11]
 
 
