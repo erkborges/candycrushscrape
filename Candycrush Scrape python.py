@@ -55,7 +55,7 @@ while True:
         driver.find_element(By.XPATH,'//*[@id="sendme"]/input[3]').click()
         driver2.find_element(By.XPATH,'//*[@id="sendme"]/input[3]').click()
         driver3.find_element(By.XPATH,'//*[@id="sendme"]/input[3]').click()
-        print('Successfully added 2 Party Bomb and 1 UFO!')
+        print('Successfully added boosters!')
     except:
         pass
     if keyboard.is_pressed('q'):
